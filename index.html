@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Diamond Budget</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body>
     <div class="background">
-        <h1>The Diamond Budget</h1>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown</button>
+      <h1>The Diamond Budget</h1>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <br /><br />
+        <div class="dropdown-content">
+          <label for="item">Choose a section:</label>
+
+          <select name="item" id="item">
+            <option value="bills">Bills</option>
+            <option value="food">Food</option>
+            <option value="clothes">Clothes</option>
+            <option value="entertainment">Entertainment</option>
+          </select>
+          <a href="./entertainment.html">Entertainment</a>
+          <a href="./bills.html">Bills</a>
+          <a href="./clothes.html">Clothes</a>
+          <a href="./food.html">Food</a>
           <br /><br />
-          <div class="dropdown-content">
-            <a href="#">Entertainment</a>
-            <a href="#">Bills</a>
-            <a href="#">Clothes</a>
-            <a href="#">Food</a>
-            <br /><br />
-          </div>
-          <div class="summary">
-            <span class="label-income">Total Income</span>
-            <input type="number" placeholder="Income" />
-            <span class="label-spending">Total Spending</span>
-            <input type="number" placeholder="Spending" />
-  
-            <div class="remaining amount"></div>
-            <h2>Pie Chart</h2>
-            <div class="piechart"></div>
-            <div class="Chart">
-              <input type="checkbox" />
-              <label for="checkbox"> Spent</label>
-              <input type="checkbox" />
-              <label for="cash"> Remaining Cash</label>
-            </div>
+        </div>
+        <div class="summary">
+          <span class="label-income">Total Income</span>
+          <input type="number" placeholder="Income" />
+          <span class="label-spending">Total Spending</span>
+          <input type="number" placeholder="Spending" />
+
+          <div class="remaining amount"></div>
+          <h2>Pie Chart</h2>
+          <div class="piechart"></div>
+          <div class="Chart">
+            <input type="checkbox" />
+            <label for="checkbox"> Spent</label>
+            <input type="checkbox" />
+            <label for="cash"> Remaining Cash</label>
           </div>
         </div>
-      </div>  
-</body>
+      </div>
+    </div>
+  </body>
 </html>
