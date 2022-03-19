@@ -24,5 +24,21 @@ h2{
 }
 a{
     font-size: 20px; color:#1F9AFE;
+} */
+
+body{
+    background-image: url(https://th.bing.com/th/id/OIP.2J8HXC7awoTVl0_6-xTaGAHaEo?w=302&h=188&c=7&r=0&o=5&pid=1.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: no-blur;
+    color: #85bb65
+};
+
+.background{
+    display: flex;
+    text-align: center;
 }
- */
+
