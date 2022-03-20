@@ -13,3 +13,6 @@ body{
     display: flex;
     text-align: center;
 };
+i{
+    color: #85bb65;
+}

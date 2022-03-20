@@ -7,21 +7,20 @@
     <title>The Diamond Budget</title>
     <link rel="stylesheet" href="./main.css" />
     <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/bars?s=solid.css">
   </head>
   <body>
     <div class="app-container">
       <h1>The Diamond Budget</h1>
-      <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
-        <br /><br />
         <div class="dropdown-content">
           <label for="item">Choose a section:</label>
-
+          <i class="fa-solid fa-user"></i>
           <select name="item" id="item">
+            <option value=" "></option>
             <option value="bills">Bills</option>
             <option value="food">Food</option>
             <option value="clothes">Clothes</option>
-            <option value="entertainment">Entertainment</option>
+            <option value="entertainment.html">Entertainment</option>
           </select>
           <a href="./entertainment.html">Entertainment</a>
           <a href="./bills.html">Bills</a>
@@ -29,15 +28,17 @@
           <a href="./food.html">Food</a>
           <br /><br />
         </div>
-        <div class="summary">
+        <div class="dashboard">
+          <p>Dashboard</p>
           <span class="label-income">Total Income</span>
           <input type="number" placeholder="Income" />
           <span class="label-spending">Total Spending</span>
           <input type="number" placeholder="Spending" />
 
-          <div class="remaining amount"></div>
-          <h2>Pie Chart</h2>
+          <!-- <div class="remaining amount"></div>
+          <h2>Pie Chart</h2> -->
           <div class="piechart"></div>
+
           <div class="Chart">
             <input type="checkbox" />
             <label for="checkbox"> Spent</label>
