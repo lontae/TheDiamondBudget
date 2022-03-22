@@ -90,3 +90,7 @@ editIncome.addEventListener("click", function (idx) {
     updateUI();
     clearInput([incomeTitle, incomeAmount]);
 })
+const clickMe =() => {
+    console.log("you click me")
+}
+console.log("bills")
