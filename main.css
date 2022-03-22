@@ -3,19 +3,52 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
+    margin: auto;
+    border-radius: 6rem;
+    height: 82vh;
     width: 100%;
-    height: 100vh;
     backdrop-filter: no-blur;
-    color: #85bb65
+    justify-content: auto;
+    color: #85bb65;
 };
-
+h1{
+    text-align: center;
+}
+.dropdown-content{
+    margin-right: 20rem;
+}
+.dashboard{
+    justify-content: space-around;
+}
 .ent-detail{
-    background-image: url(https://th.bing.com/th/id/R.10352ebb74076bb03e16bec551055cfa?rik=xUwUgYApdtUzKw&pid=ImgRaw&r=0);
+    background-image:url(data:image/png;base64,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);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
-    width: 100%;
+    margin: auto;
+    border-radius: 6rem;
     height: 100vh;
+    width: 60%;
     backdrop-filter: no-blur;
-    color: #85bb65
-};
+    display: flexbox;
+    padding: 20px;
+    margin-left: 20rem;
+    color: #85bb65;
+}
+.ent-bud-amount{
+    margin: 8rem 2rem 0rem 10rem;
+}
+.clothes-detail{
+    background-image: url(https://quizizz.com/media/resource/gs/quizizz-media/quizzes/c11b8772-b957-4a2e-ac71-611b3dcdde4b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    margin: auto;
+    border-radius: 6rem;
+    height: 82vh;
+    width: 100%;
+    backdrop-filter: no-blur;
+}
+.food-detail{
+    background-image: url();
+}
