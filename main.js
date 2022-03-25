@@ -1,12 +1,13 @@
-const balanceE1 = document.querySelector(".balance .value");
-const incomeTotalE1 = document.querySelector(".outcome-total");
-const outcomeTotalE1 = document.querySelector(".income-total");
-const incomeE1 = document.querySelector("#income");
-const expenseE1 = document.querySelector("#expense");
+const totalIncome = document.querySelector(".income .value");
+const totalSpending = document.querySelector(".spending .value");
+const remainingAmount = document.querySelector(".balance .value");
+const budgetedAmount = document.querySelector("#budget");
+const expense = document.querySelector("#expense");
 const incomeList = document.querySelector("#income .list");
 const expenseList = document.querySelector("#expense .list");
 
-const chartE1 = document.querySelector("Chart"); //use an Image, it does not have to work
+// const chartE1 = document.querySelector("Chart");  //use an Image, it does not have to work 
+
 
 const incomeAmount = document.getElementById("income-amount-input");
 const addIncome = document.querySelector(" .add-income");
@@ -17,46 +18,45 @@ const expenseTitle = document.getElementById("expense-title-input");
 const expenseAmount = document.getElementById("expense-amount-input");
 // buttons - may need to add to html
 
-let ENTRY_LIST = [];
-let balance = 0,
-  income = 0,
-  outcome = 0;
 
-const DELETE = "delete",
-  EDIT = "edit";
-// variables??
+// variables
+let ENTRY_LIST = [];
+let balance = 0, income = 0, expense = 0;
+
+const DELETE = "delete", EDIT = "edit";
+
 
 addIncome.addEventListener("click", function () {
-  if (!incomeTitle.value || incomeAmount.value) return;
-  let income = {
-    type: "income",
-    title: incomeTitle.value,
-    amount: parseFloat(incomeAmount.value),
-  };
-  ENTRY_LIST.push(income);
+    if (!income.value || incomeAmount.value) return;
+    let income = {
+        type: "income",
+        title: income.value,
+        amount: parseFloat(incomeAmount.value),
+    }
+    ENTRY_LIST.push(income);
 
-  updateUI();
-  clearInput([incomeTitle, incomeAmount]);
+    updateUI();
+    clearInput([income, incomeAmount]);
 });
 
 addExpense.addEventListener("click", function () {
-  if (!expenseTitle.value || expenseAmount.value) return;
-  // if nothing is entered exit the entry
-  let expense = {
-    type: "expense",
-    title: expenseTitle.value,
-    amount: parseFloat(expenseAmount.value),
-  };
-  ENTRY_LIST.push(expense);
+    if (!expense.value || expenseAmount.value) return;
+    // if nothing is entered exit the entry
+    let expense = {
+        type: "expense",
+        title: expense.value,
+        amount: parseFloat(expenseAmount.value),
+    }
+    ENTRY_LIST.push(expense);
 
   updateUI();
   clearInput([expenseTitle, expenseAmount]);
 });
 
 function updateUI() {
-  income = calculateTotal("income", ENTRY_LIST);
-  outcome = calculateTotal("outcome", ENTRY_LIST);
-  balance = calculateTotal("balance", ENTRY_LIST);
+    income = calculateTotal("income", ENTRY_LIST);
+    spending = calculateTotal("Spending", ENTRY_LIST);
+    balance = calculateTotal("income", ENTRY_LIST);
 
   incomeTotalE1.innerHTML = income;
   outcomeTotalE1.innerHTML = outcome;
@@ -74,8 +74,8 @@ function calculateTotal(type, list) {
 
   return sum;
 }
-function calculateBalance(income, outcome) {
-  return income - outcome;
+function calculateBalance(income, expense) {
+    return income - expense;
 }
 
 editIncome.addEventListener("click", function (idx) {
@@ -90,4 +90,9 @@ const clickMe = () => {
   console.log("bills");
   window.location = "bills.html";
 };
+
+    ENTRY_LIST[idx].amount = calculateBalance(income.value, expense)
+    updateUI();
+    clearInput([incomeTitle, incomeAmount]);
+})
 
