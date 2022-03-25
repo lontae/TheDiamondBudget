@@ -7,45 +7,51 @@
     <title>The Diamond Budget</title>
     <link rel="stylesheet" href="./main.css" />
     <script src="./main.js"></script>
-    <link rel="stylesheet" href="https://fontawesome.com/icons/bars?s=solid.css">
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/bars?s=solid.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3bc2258c93.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="app-container">
       <h1 class="diamond-bud-title">The Diamond Budget</h1>
-        <div class="dropdown-content">
-          <label for="item">Choose a section:</label>
-          <i class="fa-solid fa-user"></i>
-          <select name="item" id="item">
-            <option value=" "></option>
-            <option onclick="clickMe()" value="bills">Bills</option>
-            <option onclick="clickMe()" value="food">Food</option>
-            <option onclick="clickMe()" value="clothes">Clothes</option>
-            <option onclick="clickMe()" value="entertainment.html">Entertainment</option>
-          </select>
-          <a href="./entertainment.html">Entertainment</a>
-          <a href="./bills.html">Bills</a>
-          <a href="./clothes.html">Clothes</a>
-          <a href="./food.html">Food</a>
-          <br /><br />
-        </div>
-        <div class="dashboard">
-          <p>Dashboard</p>
-          <span class="label-income">Total Income</span>
-          <input type="number" placeholder="Income" />
-          <span class="label-spending">Total Spending</span>
-          <input type="number" placeholder="Spending" />
-
-          <!-- <div class="remaining amount"></div>
+      <div class="dropdown-content">
+        <label for="item">Choose a section:</label>
+        <i class="fa-solid fa-bars"></i>
+        <select name="item" id="item">
+          <option value=" "></option>
+          <option onclick="clickMe()" value="bills.html">Bills</option>
+          <option onclick="clickMe()" value="food.html">Food</option>
+          <option onclick="clickMe()" value="clothes.html">Clothes</option>
+          <option onclick="clickMe()" value="entertainment.html">
+            Entertainment
+          </option>
+        </select>
+        <a href="./entertainment.html">Entertainment</a>
+        <a href="./bills.html">Bills</a>
+        <a href="./clothes.html">Clothes</a>
+        <a href="./food.html">Food</a>
+        <br /><br />
+      </div>
+      <div class="dashboard">
+        <p>Dashboard</p>
+        <span class="label-income">Total Income</span>
+        <input type="number" placeholder="Income" />
+        <span class="label-spending">Total Spending</span>
+        <input type="number" placeholder="Spending" />
+      </div>
+      <!-- <div class="remaining amount"></div>
           <h2>Pie Chart</h2> -->
-          <div class="piechart"></div>
-
-          <div class="Chart">
-            <input type="checkbox" />
-            <label for="checkbox"> Spent</label>
-            <input type="checkbox" />
-            <label for="cash"> Remaining Cash</label>
-          </div>
-        </div>
+      <div class="piechart"></div>
+      <div class="Chart">
+        <input type="checkbox" />
+        <label for="checkbox"> Spent</label>
+        <input type="checkbox" />
+        <label for="cash"> Remaining Cash</label>
       </div>
     </div>
   </body>
