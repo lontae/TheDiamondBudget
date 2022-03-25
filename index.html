@@ -21,38 +21,43 @@
       <h1 class="diamond-bud-title">The Diamond Budget</h1>
       <div class="dropdown-content">
         <label for="item">Choose a section:</label>
-        <i class="fa-solid fa-bars"></i>
-        <select name="item" id="item">
+
+        <select onclick="clickMe(event)" name="item" id="item">
           <option value=" "></option>
-          <option onclick="clickMe()" value="bills.html">Bills</option>
-          <option onclick="clickMe()" value="food.html">Food</option>
-          <option onclick="clickMe()" value="clothes.html">Clothes</option>
-          <option onclick="clickMe()" value="entertainment.html">
-            Entertainment
-          </option>
+          <option value="bills.html">Bills</option>
+          <option value="food.html">Food</option>
+          <option value="clothes.html">Clothes</option>
+          <option value="entertainment.html">Entertainment</option>
         </select>
-        <a href="./entertainment.html">Entertainment</a>
+        <!-- <a href="./entertainment.html">Entertainment</a>
         <a href="./bills.html">Bills</a>
         <a href="./clothes.html">Clothes</a>
-        <a href="./food.html">Food</a>
-        <br /><br />
+        <a href="./food.html">Food</a> -->
       </div>
       <div class="dashboard">
         <p>Dashboard</p>
+        <label for="file">Entertainment:</label>
+        <progress id="file" value="14" max="100">14%</progress>
+        <label for="file">Bills:</label>
+        <progress id="file" value="36" max="100">36%</progress>
+        <label for="file">Clothes:</label>
+        <progress id="file" value="24" max="100">24%</progress>
+        <label for="file">Food:</label>
+        <progress id="file" value="12" max="100">12%</progress>
         <span class="label-income">Total Income</span>
-        <input type="number" placeholder="Income" />
+        <input type="text" placeholder="Income" />
         <span class="label-spending">Total Spending</span>
-        <input type="number" placeholder="Spending" />
+        <input type="text" placeholder="Spending" />
       </div>
       <!-- <div class="remaining amount"></div>
           <h2>Pie Chart</h2> -->
-      <div class="piechart"></div>
+      <!-- <div class="piechart"></div>
       <div class="Chart">
         <input type="checkbox" />
         <label for="checkbox"> Spent</label>
         <input type="checkbox" />
         <label for="cash"> Remaining Cash</label>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

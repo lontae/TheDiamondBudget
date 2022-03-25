@@ -1,98 +1,106 @@
-const totalIncome = document.querySelector(".income .value");
-const totalSpending = document.querySelector(".spending .value");
-const remainingAmount = document.querySelector(".balance .value");
-const budgetedAmount = document.querySelector("#budget");
-const expense = document.querySelector("#expense");
-const incomeList = document.querySelector("#income .list");
-const expenseList = document.querySelector("#expense .list");
+// const totalIncome = document.querySelector(".income .value");
+// const totalSpending = document.querySelector(".spending .value");
+// const remainingAmount = document.querySelector(".balance .value");
+// const budgetedAmount = document.querySelector("#budget");
+// const expense = document.querySelector("#expense");
+// const incomeList = document.querySelector("#income .list");
+// const expenseList = document.querySelector("#expense .list");
 
-// const chartE1 = document.querySelector("Chart");  //use an Image, it does not have to work 
-
-
-const incomeAmount = document.getElementById("income-amount-input");
-const addIncome = document.querySelector(" .add-income");
-const incomeTitle = document.getElementById("income-title-input");
-
-const addExpense = document.querySelector(" .add-expense");
-const expenseTitle = document.getElementById("expense-title-input");
-const expenseAmount = document.getElementById("expense-amount-input");
-// buttons - may need to add to html
+// // const chartE1 = document.querySelector("Chart");  //use an Image, it does not have to work 
 
 
-// variables
-let ENTRY_LIST = [];
-let balance = 0, income = 0, expense = 0;
+// const incomeAmount = document.getElementById("income-amount-input");
+// const addIncome = document.querySelector(" .add-income");
+// const incomeTitle = document.getElementById("income-title-input");
 
-const DELETE = "delete", EDIT = "edit";
+// const addExpense = document.querySelector(" .add-expense");
+// const expenseTitle = document.getElementById("expense-title-input");
+// const expenseAmount = document.getElementById("expense-amount-input");
+// // buttons - may need to add to html
 
 
-addIncome.addEventListener("click", function () {
-    if (!income.value || incomeAmount.value) return;
-    let income = {
-        type: "income",
-        title: income.value,
-        amount: parseFloat(incomeAmount.value),
-    }
-    ENTRY_LIST.push(income);
+// // variables
+// let ENTRY_LIST = [];
+// let balance = 0, income = 0, expense = 0;
 
-    updateUI();
-    clearInput([income, incomeAmount]);
-});
+// const DELETE = "delete", EDIT = "edit";
 
-addExpense.addEventListener("click", function () {
-    if (!expense.value || expenseAmount.value) return;
-    // if nothing is entered exit the entry
-    let expense = {
-        type: "expense",
-        title: expense.value,
-        amount: parseFloat(expenseAmount.value),
-    }
-    ENTRY_LIST.push(expense);
 
-  updateUI();
-  clearInput([expenseTitle, expenseAmount]);
-});
+// addIncome.addEventListener("click", function () {
+//     if (!income.value || incomeAmount.value) return;
+//     let income = {
+//         type: "income",
+//         title: income.value,
+//         amount: parseFloat(incomeAmount.value),
+//     }
+//     ENTRY_LIST.push(income);
 
-function updateUI() {
-    income = calculateTotal("income", ENTRY_LIST);
-    spending = calculateTotal("Spending", ENTRY_LIST);
-    balance = calculateTotal("income", ENTRY_LIST);
+//     updateUI();
+//     clearInput([income, incomeAmount]);
+// });
 
-  incomeTotalE1.innerHTML = income;
-  outcomeTotalE1.innerHTML = outcome;
-  //this will calculate and upate the visual
-}
+// addExpense.addEventListener("click", function () {
+//     if (!expense.value || expenseAmount.value) return;
+//     // if nothing is entered exit the entry
+//     let expense = {
+//         type: "expense",
+//         title: expense.value,
+//         amount: parseFloat(expenseAmount.value),
+//     }
+//     ENTRY_LIST.push(expense);
 
-function calculateTotal(type, list) {
-  let sum = 0;
+//   updateUI();
+//   clearInput([expenseTitle, expenseAmount]);
+// });
 
-  list.forEach((entry) => {
-    if (entry.type == type) {
-      sum += entry.amount;
-    }
-  });
+// function updateUI() {
+//     income = calculateTotal("income", ENTRY_LIST);
+//     spending = calculateTotal("Spending", ENTRY_LIST);
+//     balance = calculateTotal("income", ENTRY_LIST);
 
-  return sum;
-}
-function calculateBalance(income, expense) {
-    return income - expense;
-}
+//   incomeTotalE1.innerHTML = income;
+//   outcomeTotalE1.innerHTML = outcome;
+//   //this will calculate and upate the visual
+// }
 
-editIncome.addEventListener("click", function (idx) {
-  if (!incomeTitle.value || incomeAmount.value) return;
+// function calculateTotal(type, list) {
+//   let sum = 0;
 
-  ENTRY_LIST[idx].amount = calculateBalance(incomeAmount.value, outcome);
-  updateUI();
-  clearInput([incomeTitle, incomeAmount]);
-});
-const clickMe = () => {
-  function clickMe()
-  console.log("bills");
-  window.location = "bills.html";
+//   list.forEach((entry) => {
+//     if (entry.type == type) {
+//       sum += entry.amount;
+//     }
+//   });
+
+//   return sum;
+// }
+// function calculateBalance(income, expense) {
+//     return income - expense;
+// }
+
+// editIncome.addEventListener("click", function (idx) {
+//   if (!incomeTitle.value || incomeAmount.value) return;
+
+//   ENTRY_LIST[idx].amount = calculateBalance(incomeAmount.value, outcome);
+//   updateUI();
+//   clearInput([incomeTitle, incomeAmount]);
+// });
+// const clickMe = () => {
+//   function clickMe()
+//   console.log("bills");
+//   window.location = "bills.html";
+// };
+
+//     ENTRY_LIST[idx].amount = calculateBalance(income.value, expense)
+//     updateUI();
+//     clearInput([incomeTitle, incomeAmount]);
+// })
+const clickMe = (e) => {
+  console.log("bills",e.target.value);
+  setTimeout(() => {
+    window.location.href = e.target.value
+  },  5000);
 };
-
-    ENTRY_LIST[idx].amount = calculateBalance(income.value, expense)
-    updateUI();
-    clearInput([incomeTitle, incomeAmount]);
-})
-
+const goBackHome = (e) => {
+ window.location.href = 'index.html'
+ };
