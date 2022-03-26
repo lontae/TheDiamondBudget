@@ -4,11 +4,15 @@
     background-size: cover;
     background-position: 100%;
     margin: auto;
+    /* display: flex; */
     border-radius: 6rem;
     height: 90vh;
     width: 90%;
     text-align: center;
     color: #ffb129;
+}
+body{
+    background-color:  #ffb129;
 }
 a{
     text-decoration: none;
@@ -17,16 +21,31 @@ a{
 .diamond-bud-title{
     font-style: oblique;
     font-size: 60px;
+    margin-bottom: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem
 }
 .dropdown-content{
-    padding-left: 60rem;
-    font-size: large;
+    font-size: 15px;
+    font-style: none;
+    padding: 2em;
+
 }
 .dashboard{
-    justify-content: space-around;
-    font-size: large;
+    /* justify-content: space-around; */
+    font-size: x-large;
     font-weight: bold;
     margin: 15rem;
+    background-color: white;
+    margin: auto;
+    flex-direction: column;
+    border-radius: 4rem;
+    width: 19%;
+    height: 70vh;
+    margin-top: 3rem;
+    padding: 0 5rem 0rem 3rem;
 }
 .ent-detail{
     background-image:url(https://gettywallpapers.us/wp-content/uploads/2021/09/Diamond-Pictures-Background.jpg);
@@ -43,21 +62,21 @@ a{
     color: #ffb129;
 }
 .ent-bud-amount{
-    margin: 8rem 2rem 0rem 10rem;
-    padding-left: 15rem;
+    margin: 4rem 6rem 4rem 10rem;
+    background-color: white;
 }
 .ent-receipt-amount{
     padding-left: 30rem;
     margin-top: 5rem;
 }
-.ent-amount-spent{
-    padding-right: 30rem;
-}
 .ent-ts-amount{
-    padding-right: 30rem;
+    margin: 4rem 6rem 4rem 10rem;
 }
 .ent-rem-amount{
-    padding-left: 25rem;
+    margin: 4rem 6rem 4rem 10rem;
+}
+.add-expense{
+    margin: 0rem 0rem 0rem 5rem;
 }
 .ent-title{
     font-style: oblique;
@@ -79,20 +98,13 @@ a{
     color: #ffb129;
 }
 .bill-bud-amount{
-    margin: 8rem 2rem 0 10rem;
-    padding-right: 30rem;
-}
-.bill-amount-spent{
-padding-left: 30rem;
-}
-.bill-receipt-amount{
-padding-right: 30rem;
+  margin-top: 4rem;
 }
 .bill-ts-amount{
-    padding-left: 30rem;
+padding: 2rem;
 }
 .bill-rem-amount{
-    padding-right: 30rem;
+padding: 1rem;
 }
 .bills-title{
     font-style: oblique;
@@ -116,20 +128,13 @@ padding-right: 30rem;
     font-style: oblique;
 }
 .clothes-bud-amount{
-    padding-left: 30rem;
     margin-top: 4rem;
 }
-.clothes-amount-spent{
-    padding-right: 30rem;
-}
-.clothes-receipt-amount{
-    padding-left: 30rem;
-}
 .clothes-ts-amount{
-    padding-right: 30rem;
+    padding: 2rem;
 }
 .clothes-rem-amount{
-    padding-left: 30rem;
+   padding: 1rem;
 }
 .food-detail{
     background-image: url(https://gettywallpapers.us/wp-content/uploads/2021/09/Diamond-Pictures-Background.jpg);
@@ -150,23 +155,19 @@ padding-right: 30rem;
 font-style: oblique;
 }
 .food-bud-amount{
-    padding-right: 30rem;
     margin-top: 4rem;
 }
-.food-amount-spent{
-    padding-left: 12rem;
-}
-.food-receipt-amount{
-    padding-right: 20rem;
-}
 .food-ts-amount{
-    padding-left: 20rem;
+padding: 2rem;
 }
 .food-rem-amount{
-    padding-right: 20rem;
+padding: 1rem;
 }
 p{
     padding-bottom: 4rem;
     font-size: xx-large;
-    margin-right: 2rem;
+    margin-right: -2rem;
+}
+progress{
+    width: 100%;
 }
