@@ -14,28 +14,25 @@
   </head>
   <body>
     <div class="food-detail">
-      <h1 class="food-title">
-        Food
-        <button onclick="goBackHome(event)">
-          <i class="fa-solid fa-house"></i>
-        </button>
-      </h1>
-      <progress id="file" value="12" max="100">12%</progress>
-      <div class="food-container">
-        <div class="food-bud-amount">
-          <span class="">Budgeted Amount:</span>
-          <input type="text" placeholder="amount" />
-        </div>
-        <div class="entry">salary: $ 600</div>
-        <div class="food-ts-amount">
-          <span class="">Total Spent:</span>
-          <input type="text" placeholder="amount" />
-        </div>
-        <div class="food-rem-amount">
-          <span class="">Remaining Amount:</span>
-          <input type="text" placeholder="amount" />
-        </div>
+      <h1 class="food-title">Food</h1>
+      <button onclick="goBackHome(event)">
+        <i class="fa-solid fa-house"></i>
+      </button>
+      <label for="file">Food:</label>
+      <progress id="file" value="12" max="100"> 12% </progress>
+      <div class="food-bud-amount">
+        <span class="">Budgeted Amount:</span>
+        <input type="text" placeholder="amount" />
       </div>
+      <div class="food-ts-amount">
+        <span class="">Total Spent:</span>
+        <input type="text" placeholder="amount" />
+      </div>
+      <div class="food-rem-amount">
+        <span class="">Remaining Amount:</span>
+        <input type="text" placeholder="amount" />
+      </div>
+     
     </div>
   </body>
 </html>
