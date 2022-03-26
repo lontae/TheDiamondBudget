@@ -7,44 +7,35 @@
     <title>The Diamond Budget Detail Page</title>
     <link rel="stylesheet" href="./main.css" />
     <script src="./main.js"></script>
-    <script src="https://kit.fontawesome.com/3bc2258c93.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3bc2258c93.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="food-detail">
-      <h1 class="food-title">Food</h1>
-      <button onclick="goBackHome(event)">
-        <i class="fa-solid fa-house"></i>
-      </button>
-      <!-- <i class="fa-solid fa-house"></i> -->
-      <label for="file">Food:</label>
-      <progress id="file" value="12" max="100"> 12% </progress>
-      <div class="food-bud-amount">
-        <span class="">Budgeted Amount:</span>
-        <input type="text" placeholder="amount" />
+      <h1 class="food-title">
+        Food
+        <button onclick="goBackHome(event)">
+          <i class="fa-solid fa-house"></i>
+        </button>
+      </h1>
+      <progress id="file" value="12" max="100">12%</progress>
+      <div class="food-container">
+        <div class="food-bud-amount">
+          <span class="">Budgeted Amount:</span>
+          <input type="text" placeholder="amount" />
+        </div>
+        <div class="entry">salary: $ 600</div>
+        <div class="food-ts-amount">
+          <span class="">Total Spent:</span>
+          <input type="text" placeholder="amount" />
+        </div>
+        <div class="food-rem-amount">
+          <span class="">Remaining Amount:</span>
+          <input type="text" placeholder="amount" />
+        </div>
       </div>
-     
-      <div class="food-amount-spent">
-        <span class="">Amount Spent:</span>
-      </div>
-     
-      <!-- <div class="food-receipt-amount">
-        <span class="">Receipt #1:</span>
-        <input type="number" placeholder="amount" />
-        <br /><br />
-        <span class="">Receipt #2:</span>
-        <input type="number" placeholder="amount" /> -->
-      </div>
-     
-      <div class="food-ts-amount">
-        <span class="">Total Spent:</span>
-        <input type="text" placeholder="amount" />
-      </div>
-      
-      <div class="food-rem-amount">
-        <span class="">Remaining Amount:</span>
-        <input type="text" placeholder="amount" />
-      </div>
-     
     </div>
   </body>
 </html>

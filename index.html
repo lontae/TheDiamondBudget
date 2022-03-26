@@ -18,46 +18,46 @@
   </head>
   <body>
     <div class="app-container">
-      <h1 class="diamond-bud-title">The Diamond Budget</h1>
-      <div class="dropdown-content">
-        <label for="item">Choose a section:</label>
-
-        <select onclick="clickMe(event)" name="item" id="item">
-          <option value=" "></option>
-          <option value="bills.html">Bills</option>
-          <option value="food.html">Food</option>
-          <option value="clothes.html">Clothes</option>
-          <option value="entertainment.html">Entertainment</option>
-        </select>
-        <!-- <a href="./entertainment.html">Entertainment</a>
-        <a href="./bills.html">Bills</a>
-        <a href="./clothes.html">Clothes</a>
-        <a href="./food.html">Food</a> -->
-      </div>
+      <h1 class="diamond-bud-title">
+        The Diamond Budget
+        <div class="dropdown-content">
+          <label for="item">Choose a section:</label>
+          <select onclick="clickMe(event)" name="item" id="item">
+            <option value=" "></option>
+            <option value="bills.html">Bills</option>
+            <option value="food.html">Food</option>
+            <option value="clothes.html">Clothes</option>
+            <option value="entertainment.html">Entertainment</option>
+          </select>
+        </div>
+      </h1>
       <div class="dashboard">
         <p>Dashboard</p>
-        <label for="file">Entertainment:</label>
-        <progress id="file" value="14" max="100">14%</progress>
-        <label for="file">Bills:</label>
-        <progress id="file" value="36" max="100">36%</progress>
-        <label for="file">Clothes:</label>
-        <progress id="file" value="24" max="100">24%</progress>
-        <label for="file">Food:</label>
-        <progress id="file" value="12" max="100">12%</progress>
-        <span class="label-income">Total Income</span>
-        <input type="text" placeholder="Income" />
-        <span class="label-spending">Total Spending</span>
-        <input type="text" placeholder="Spending" />
+        <div class="ent-progress">
+          <label for="entertainment">Entertainment:</label>
+          <progress id="entertainment" value="14" max="100">14%</progress>
+        </div>
+        <div class="bills-progress">
+          <label for="bills">Bills:</label>
+          <progress id="bills" value="36" max="100">36%</progress>
+        </div>
+        <div class="clothes-progress">
+          <label for="clothes">Clothes:</label>
+          <progress id="clothes" value="24" max="100">24%</progress>
+        </div>
+        <div class="food-progress">
+          <label for="food">Food:</label>
+          <progress id="food" value="12" max="100">12%</progress>
+        </div>
+        <div class="total-income">
+          <span class="label-income">Total Income</span>
+          <input type="text" placeholder="$5,000" />
+        </div>
+        <div class="total-spending">
+          <span class="label-spending">Total Spending</span>
+          <input type="text" placeholder="$4,300" />
+        </div>
       </div>
-      <!-- <div class="remaining amount"></div>
-          <h2>Pie Chart</h2> -->
-      <!-- <div class="piechart"></div>
-      <div class="Chart">
-        <input type="checkbox" />
-        <label for="checkbox"> Spent</label>
-        <input type="checkbox" />
-        <label for="cash"> Remaining Cash</label>
-      </div> -->
     </div>
   </body>
 </html>

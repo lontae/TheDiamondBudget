@@ -7,45 +7,35 @@
     <title>The Diamond Budget Detail Page</title>
     <link rel="stylesheet" href="./main.css" />
     <script src="./main.js"></script>
-    <script src="https://kit.fontawesome.com/3bc2258c93.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3bc2258c93.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="bills-detail">
-      <h1 class="bills-title">Bills</h1>
-      <button onclick="goBackHome(event)">
-        <i class="fa-solid fa-house"></i>
-      </button>
-      <!-- <i class="fa-solid fa-house"></i> -->
-      
-      <label for="file">Bills:</label>
-      <progress id="file" value="36" max="100"> 36% </progress>
-      <div class="bill-bud-amount">
-        <span class="">Budgeted Amount:</span>
-        <input type="text" placeholder="amount" />
+      <h1 class="bills-title">
+        Bills
+        <button onclick="goBackHome(event)">
+          <i class="fa-solid fa-house"></i>
+        </button>
+      </h1>
+      <progress id="file" value="36" max="100">36%</progress>
+      <div class="bills-container">
+        <div class="bill-bud-amount">
+          <span class="">Budgeted Amount:</span>
+          <input type="text" placeholder="$1800" />
+        </div>
+        <div class="bill-ts-amount">
+          <span class="">Total Spent:</span>
+          <input type="number" placeholder="$1,800" />
+        </div>
+        <div class="entry">salary: $ 1800</div>
+        <div class="bill-rem-amount">
+          <span class="">Remaining Cash:</span>
+          <input type="text" placeholder=" " />
+        </div>
       </div>
-   
-      <div class="bill-amount-spent">
-        <span class="">Amount Spent:</span>
-      </div>
-      
-      <!-- <div class="bill-receipt-amount">
-        <span class="">Receipt #1:</span>
-        <input type="number" placeholder="amount" />
-        <br /><br />
-        <span class="">Receipt #2:</span>
-        <input type="number" placeholder="amount" /> -->
-      </div>
-      
-      <div class="bill-ts-amount">
-        <span class="">Total Spent:</span>
-        <input type="number" placeholder="amount" />
-      </div>
-      
-      <div class="bill-rem-amount">
-        <span class="">Remaining Cash:</span>
-        <input type="text" placeholder="amount" />
-      </div>
-     
     </div>
   </body>
 </html>

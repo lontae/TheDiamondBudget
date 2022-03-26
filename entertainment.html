@@ -14,61 +14,66 @@
   </head>
   <body>
     <div class="ent-detail">
-      <h1 class="ent-title">Entertainment</h1>
-      <button onclick="goBackHome(event)">
-        <i class="fa-solid fa-house"></i>
-      </button>
-      <!-- <select onclick="goBackHome(event)" name="item" id="item"></select> -->
-      <!-- <i class="fa-solid fa-house"></i> -->
-      <label for="file">Entertainment:</label>
+      <h1 class="ent-title">
+        Entertainment
+        <button onclick="goBackHome(event)">
+          <i class="fa-solid fa-house"></i>
+        </button>
+      </h1>
       <progress id="file" value="14" max="100">14%</progress>
-      <div class="ent-bud-amount">
-        <span class="">Budgeted Amount:</span>
-        <input type="number" placeholder="amount" />
-      </div>
-      <div class="ent-amount-spent">
-        <span class="">Amount Spent:</span>
-      </div>
-
-      <!-- <div class="ent-receipt-amount">
-        <span class="">Receipt #1:</span>
-        <input type="number" placeholder="amount" />
-        <br /><br />
-        <span class="">Receipt #2:</span>
-        <input type="number" placeholder="amount" /> -->
-
-      <div id="expense">
-        <ul class="list"></ul>
-        <div class="input">
-          <input
-            type="text"
-            id="expense-title-input"
-            name="title"
-            placeholder="Title"
-          />
-          <input
-            type="number"
-            id="expense-amount=input"
-            name="amount"
-            placeholder="$0"
-          />
+      <div class="food-container">
+        <div class="ent-bud-amount">
+          <span class="">Budgeted Amount:</span>
+          <input type="number" placeholder="amount" />
         </div>
-        <div class="add-expense"><i class="fa-solid fa-plus"></i></div>
-      </div>
-      <div class="ent-ts-amount">
-        <span class="">Total Spent:</span>
-        <input type="number" placeholder="amount" />
-      </div>
-      <ul class="list">
-        <li id="0" class="income">
-          <div class="entry">salary: $ 2500</div>
-          <div id="edit"></div>
-          <div id="delete"></div>
-        </li>
-      </ul>
-      <div class="ent-rem-amount">
-        <span class="">Remaining Cash:</span>
-        <input type="number" placeholder="amount" />
+        <!-- <h1 class="Expenses">
+          Expenses:
+          <label>Enter a Number</label>
+          <input type="text" id="n1" />
+          <label>Enter a 2nd Number</label>
+          <input type="text" id="n2" />
+          <label>Enter a 3rd Number</label>
+          <input type="text" id="n3" />
+          <button type="button" value="Addition" onclick="add()">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <h1 class="exp-title">
+            Total Expenses
+            <div id="results"></div>
+          </h1>
+        </h1> -->
+        <div id="expense">
+          <ul class="list"></ul>
+          <div class="input">
+            <input
+              type="text"
+              id="expense-title-input"
+              name="title"
+              placeholder="Expenses"
+            />
+            <input
+              type="number"
+              id="expense-amount=input"
+              name="amount"
+              placeholder="Expenses"
+            />
+          </div>
+        </div>
+        <div class="ent-ts-amount">
+          <span class="">Total Spent:</span>
+          <input type="number" placeholder="amount" />
+        </div>
+        <ul class="list">
+          <li id="0" class="income">
+            <div class="entry">salary: $ 5000</div>
+            <div id="edit"></div>
+            <div id="delete"></div>
+          </li>
+        </ul>
+        <div class="ent-rem-amount">
+          <span class="">Remaining Cash:</span>
+          <input type="number" placeholder="amount" />
+        </div>
       </div>
     </div>
   </body>

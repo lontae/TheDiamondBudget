@@ -7,39 +7,34 @@
     <title>The Diamond Budget Detail Page</title>
     <link rel="stylesheet" href="./main.css" />
     <script src="./main.js"></script>
-    <script src="https://kit.fontawesome.com/3bc2258c93.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3bc2258c93.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="clothes-detail">
-      <h1 class="clothes-title">Clothes</h1>
-      <button onclick="goBackHome(event)">
-        <i class="fa-solid fa-house"></i>
-      </button>
-      <!-- <i class="fa-solid fa-house"></i> -->
-      <label for="file">Clothes:</label>
-      <progress id="file" value="24" max="100"> 24% </progress>
-      <div class="clothes-bud-amount">
-        <span class="">Budgeted Amount:</span>
-        <input type="number" placeholder="amount" />
-      </div>
-    </div>
-      <div class="clothes-amount-spent">
-        <span class="">Amount Spent:</span>
-      </div>
-      <!-- <div class="clothes-receipt-amount">
-        <span class="">Receipt #1:</span>
-        <input type="number" placeholder="amount" />
-        <br /><br />
-        <span class="">Receipt #2:</span>
-        <input type="number" placeholder="amount" /> -->
-      </div>
-    <div class="clothes-ts-amount">
-        <span class="">Total Spent:</span>
-        <input type="text" placeholder="amount" />
-    </div>
-      <div class="clothes-rem-amount">
-        <span class="">Remaining Amount:</span>
-        <input type="text" placeholder="amount" />
+      <h1 class="clothes-title">
+        Clothes
+        <button onclick="goBackHome(event)">
+          <i class="fa-solid fa-house"></i>
+        </button>
+      </h1>
+      <progress id="file" value="24" max="100">24%</progress>
+      <div class="clothes-container">
+        <div class="clothes-bud-amount">
+          <span class="">Budgeted Amount:</span>
+          <input type="number" placeholder="$1,200" />
+        </div>
+        <div class="entry">salary: $ 1200</div>
+        <div class="clothes-ts-amount">
+          <span class="">Total Spent:</span>
+          <input type="text" placeholder="amount" />
+        </div>
+        <div class="clothes-rem-amount">
+          <span class="">Remaining Amount:</span>
+          <input type="text" placeholder="amount" />
+        </div>
       </div>
     </div>
   </body>
