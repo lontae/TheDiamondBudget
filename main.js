@@ -190,12 +190,16 @@ list.addEventListener('click', function (ev) {
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
+    var yourInputValue = document.getElementById("yourInput").value;
     var t = document.createTextNode(inputValue);
+    var p = document.createTextNode(yourInputValue);
     li.appendChild(t);
+    li.appendChild(p);
     if (inputValue === '') {
-        alert("You must write something!");
+        alert("I think you're missing something!");
     } else {
         document.getElementById("myUL").appendChild(li);
+        document.getElementById("yourUL").appendChild(li);
     }
     document.getElementById("myInput").value = "";
     var span = document.createElement("SPAN");

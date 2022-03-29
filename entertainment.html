@@ -29,24 +29,25 @@
           <span class="">Budgeted Amount:</span>
           <input type="text" placeholder="amount" />
         </div>
-        <input id="a1" type="text" />
-        <input id="a2" type="text" onblur="calculate()" />
-        <input id="a3" type="text" name="total_amt" />
         <div id="expense">
           <ul class="list"></ul>
           <div id="myDIV" class="header">
             <h3 style="margin: 5px">Expenses List</h3>
             <input type="text" id="myInput" placeholder="Title..." />
-            <input type="text" id="yourInput" placeholder="Amount" />
+          </div>
+            <div id="myDIV" class="header2">
+              <input type="text" id="yourInput" placeholder="Amount" />
+            </div>
             <button onclick="newElement()" class="addBtn">
               <i class="fa-solid fa-plus"></i>
             </button>
-          </div>
+          
           <ul id="myUL"></ul>
+          <ul id="yourUL"></ul>
         </div>
         <div class="ent-ts-amount">
           <span class="">Total Spent:</span>
-          <input type="text" placeholder="amount" />
+          <div class="entry">$</div>
         </div>
       </div>
     </div>
