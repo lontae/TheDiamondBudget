@@ -2,7 +2,7 @@ const clickMe = (e) => {
   console.log("bills",e.target.value);
   setTimeout(() => {
     window.location.href = e.target.value
-  },  4300);
+  },  1500);
 };
 const goBackHome = (e) => {
  window.location.href = 'index.html'
